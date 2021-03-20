@@ -53,3 +53,4 @@ Data collecting via Web Scraping, API access and different types of databases.
 | WebScraper.py | Web page scraping of www.baaaacro.com/crash-archives |
 | WebScrapperDetail.py | Web page scraping data manipulation and saving |
 
+![A remote image](https://github.com/adanque/Data-Gathering-Techniques-using-APIs-and-Web-scraping-with-Python/blob/main/EDA_AviationDataSupplement_PandasProfileReport_output.html)
