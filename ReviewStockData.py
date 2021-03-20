@@ -6,8 +6,8 @@
 # Checks for duplicates and counts them
 # Checks the data types of the ticker field
 
-import pyodbc
-conn = pyodbc.connect('Driver={SQL Server};'
+import {Password Removed}
+conn = {Password Removed}.connect('Driver={SQL Server};'
                       'Server=192.168.1.28;'
                       'Database=DSC540_STOCK_METRICS;'
                       ';UID=usrDSC540;PWD=Password1')

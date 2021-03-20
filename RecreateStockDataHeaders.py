@@ -7,17 +7,17 @@ import csv
 from csv import DictReader
 from sqlalchemy import create_engine
 from pandas import DataFrame
-import pyodbc
+import {Password Removed}
 import urllib
 # Credentials for reading from the database table
-conn = pyodbc.connect('Driver={SQL Server};'
+conn = {Password Removed}.connect('Driver={SQL Server};'
                       'Server=192.168.1.28;'
                       'Database=DSC540_STOCK_METRICS;'
                       ';UID=usrDSC540;PWD=Password1')
                       #'Trusted_Connection=yes;')
 # Credentials for writing to the database table
 quoted = urllib.parse.quote_plus("DRIVER={SQL Server Native Client 11.0};SERVER=192.168.1.28;DATABASE=DSC540_STOCK_METRICS;UID=usrDSC540;PWD=Password1")
-engine = create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
+engine = create_engine('mssql+{Password Removed}:///?odbc_connect={}'.format(quoted))
 cursor = conn.cursor()
 cursor.execute('''  
 SELECT [EntryDt], [index], [No.], [Ticker], [Company], [Sector], [Industry], [Country], [Market Cap], [P/E], [Price], [Change], [Volume], [Date], [Time], [WeekDay], [ChangeNPCT] FROM DSC540_STOCK_METRICS..STOCK_DATA

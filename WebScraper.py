@@ -12,14 +12,14 @@ from bs4 import BeautifulSoup
 import csv
 from pandas import DataFrame
 
-import pyodbc
-conn = pyodbc.connect('Driver={SQL Server};'
+import {Password Removed}
+conn = {Password Removed}.connect('Driver={SQL Server};'
                       'Server=192.168.1.28;'
                       'Database=DSC640_AviationData;'
                       ';UID=usrDSC640;PWD=Password1')
                       #'Trusted_Connection=yes;')
 quoted = urllib.parse.quote_plus("DRIVER={SQL Server Native Client 11.0};SERVER=192.168.1.28;DATABASE=DSC640_AviationData;UID=usrDSC640;PWD=Password1")
-engine = create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
+engine = create_engine('mssql+{Password Removed}:///?odbc_connect={}'.format(quoted))
 
 
 URL = "http://www.baaa-acro.com/crash-archives?created=&created_1=&field_crash_region_target_id=All&field_crash_country_target_id&field_crash_registration_target_id&field_crash_aircraft_target_id&field_crash_operator_target_id&field_crash_cause_target_id=All&field_crash_zone_target_id&field_crash_site_type_target_id=All&field_crash_phase_type_target_id=All&field_crash_flight_type_target_id=All&field_crash_survivors_value=All&field_crash_city_target_id&page=1"

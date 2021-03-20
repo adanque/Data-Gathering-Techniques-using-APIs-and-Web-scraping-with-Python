@@ -12,15 +12,15 @@ import re
 from bs4 import BeautifulSoup as bs
 from pandas import DataFrame
 
-import pyodbc
-conn = pyodbc.connect('Driver={SQL Server};'
+import {Password Removed}
+conn = {Password Removed}.connect('Driver={SQL Server};'
                       'Server=192.168.1.28;'
                       'Database=DSC540_STOCK_METRICS;'
                       ';UID=usrDSC540;PWD=Password1')
                       #'Trusted_Connection=yes;')
 
 quoted = urllib.parse.quote_plus("DRIVER={SQL Server Native Client 11.0};SERVER=192.168.1.28;DATABASE=DSC540_STOCK_METRICS;UID=usrDSC540;PWD=Password1")
-engine = create_engine('mssql+pyodbc:///?odbc_connect={}'.format(quoted))
+engine = create_engine('mssql+{Password Removed}:///?odbc_connect={}'.format(quoted))
 
 try:
     from bs4 import BeautifulSoup
